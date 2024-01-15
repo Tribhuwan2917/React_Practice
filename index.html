@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React-practice</title>
+    <!-- home work
+    cdn:-
+     crass origin -->
+     <link rel="stylesheet" href="index.css"/>
+   
+</head>
+<body>
+    
+    <h3 id="myid">This is upper</h3>
+    <div id="root">
+        Thi9s is me+++++++++++++++++++++
+      <!-- <h1>  This is me </h1> This is normal or html way to create the pageg-->
+    </div>
+    <h3>This is buttom</h3>
+    <!-- | <script>
+        document.getElementById("root").innerHTML="<h2>Java script way to write the content on page</h2>"
+    </script> This is a java script way to write content on page or to add some tags 
+    <script>
+       const contentNode= document.createElement("h3");
+       contentNode.innerText="This is another way";
+
+       document.getElementById("root").appendChild(contentNode);
+Note:- HTML,CSS and understand by brouser very easily , and if we talking javascript , because of braouser internally have JS Engine (V8, chkra etc) beacuse of that js are able to execute very easily and we will get result , but if we are talking about REACT, it does not understable automatically, we need some translater to conver react code into (java+HTML+CSS), that translater is ""
+
+we can add those translater by using CDN(content delever network , its a plcae we react are hoisted and when add those link in our project then we can get its services) link
+    </script>
+    -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js">
+        // This is core of react
+    </script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js">
+    // This is basically use of dom maniplation
+    // because of react is not only run on brouser but also run on mobile phone(react native,react 3-D) that why thing which are related to brouser are present in the "react-dom.development.js" and the thing wich in comman to everywhere (core part of react) present in "react.development.js"
+</script>
+<script src="app.js" >
+    // // Here we are writeing react.js code 
+    // const heading=React.createElement("h1",{},"Hello from react.js");
+    // const root=ReactDOM.createRoot(document.getElementById("root"))
+    // // this is connection betwwen react and js code
+    // root.render(heading)
+</script>
+<!-- its a first way of add react in our project -->
+
+</body>
+</html>
