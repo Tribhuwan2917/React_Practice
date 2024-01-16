@@ -1,12 +1,11 @@
- // Here we are writeing react.js code
- const heading1=React.createElement("h1",{},"This is a heading")
- const heading2=React.createElement("h2",{},"This is a heading")
- const child1=React.createElement("div",{},[heading1,heading2])
- // Thi is how can create nesting of elements for react.js
- const parent=React.createElement("div",{},[child1]) 
-//  const heading=React.createElement("h1",{id:"heading"},"Hello from react.js");
-//  console.log(heading)
- const root=ReactDOM.createRoot(document.getElementById("root"))
- // this is connection betwwen react and js code
-//  root.render(heading)
-root.render(parent)
+ import React from "react";
+ import  ReactDOM  from "react-dom/client";
+ const jsxheading=(<><h1>This is from  jax1</h1>
+                    <h2>This is jsx 2</h2></>)
+ const Title=()=>(<h3>This is functional components</h3>)
+ const root=ReactDOM.createRoot(document.getElementById("root"));
+ const Comp1=()=>(<h5>This is components1</h5>)
+ const components1=<Comp1></Comp1>
+//  console.log(jsxheading)
+ root.render(<h4>Thi si somwethong new{jsxheading}Hi++++++++++{components1}<Title></Title></h4>)
+
